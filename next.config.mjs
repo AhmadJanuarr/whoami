@@ -1,5 +1,10 @@
+// @ts-check
+
+import createNextGlobeGenPlugin from "next-globe-gen/plugin";
 import createMDX from '@next/mdx'
 
+
+const withGlobeGen = createNextGlobeGenPlugin()
 const withMDX = createMDX({
     options: {
         remarkPlugins: [],
@@ -9,9 +14,9 @@ const withMDX = createMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   
     pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
     reactStrictMode: true,
-    // Configure images
     images: {
         dangerouslyAllowSVG: true,
         contentDispositionType: "inline",
@@ -31,7 +36,19 @@ const nextConfig = {
             },
         ],
     },
+    async redirects(){
+        return[
+            {
+                source:"/",
+                destination:"/en",
+                permanent:false,
+            }
+        ]
+    } 
 }
 
-export default withMDX(nextConfig)
+let config = withMDX(nextConfig)
+config = withGlobeGen(config)
+
+export default config
 
