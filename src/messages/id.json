@@ -1,0 +1,224 @@
+{
+  "common": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "blogs": "Blog",
+    "projects": "Proyek",
+    "toolbox": "Toolbox",
+    "welcome": "Selamat Datang",
+    "fullstackDeveloper": "Fullstack Developer"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "blogs": "Blog",
+    "projects": "Proyek",
+    "toolbox": "Toolbox"
+  },
+  "footer": {
+    "link": {
+      "home": "beranda",
+      "about": "tentang",
+      "blogs": "blog",
+      "projects": "proyek",
+      "toolbox": "toolbox",
+      "next": "next.js",
+      "tailwind": "tailwind css",
+      "api": "api routes",
+      "community": "komunitas",
+      "paypal": "paypal",
+      "github": "github",
+      "linkedin": "linkedin"
+    },
+    "description" :"Hi, Saya Ahmad Januar Amriyansah, seorang pengembang front-end yang suka membangun situs web yang indah, responsif, dan fungsional.",
+    "navigate": "navigate",
+    "build": "build",
+    "misc": "misc"
+  },
+  "home": {
+    "hero": {
+      "title1": "Hai, Saya Ahmad Januar!",
+      "title2": "Selamat Datang di sudut",
+      "title3": "internet saya!",
+      "description": "Selamat datang di ruang eksperimen digital saya! Saya seorang pengembang front-end yang gemar mendesain dan bereksperimen. Situs web ini adalah ruang bermain saya untuk mencoba menemukan ide-ide baru dan berbagi hal-hal menarik!"
+    },
+    "about": {
+      "head": "Ini adalah hal-hal yang membedakan saya dari yang lain",
+      "card1": {
+        "title": "Kenali saya lebih baik",
+        "description": "Saya Ahmad, seorang pengembang front-end yang suka berbagi dan bereksperimen."
+      },
+      "card2": {
+        "title": "Apa yang Mendorong Saya",
+        "description": "Kode yang bersih, perhatian pada detail, dan pembelajaran terus-menerus. Saya percaya produk hebat dibangun di persimpangan desain dan rekayasa — dan saya suka berada di persimpangan itu."
+      },
+      "card3": {
+        "title": "Membuat Web",
+        "description": "Saya membangun aplikasi web yang cepat, responsif, dan dapat diskalakan."
+      },
+      "card4": {
+        "title": "Pikiran & Eksperimen",
+        "description": "Selamat datang di blog saya — tempat saya berbagi perjalanan, tips front-end, menjelaskan konsep kompleks dengan sederhana, dan mencatat hal-hal yang saya pelajari."
+      }
+    },
+    "blogs": {
+      "label": "Artikel Terbaru",
+      "title": "Saya suka berbagi pengalaman dan eksperimen dalam tulisan."
+    },
+    "projects": {
+      "label": "Karya Saya",
+      "title": "Proyek unggulan yang pernah dibuat",
+      "viewProject": "Lihat Proyek"
+    },
+    "newsletter": {
+      "title": "Tetap Terbarui dengan Perjalanan Saya",
+      "description": "Berlangganan newsletter saya untuk mendapatkan pembaruan terbaru, wawasan, dan konten eksklusif.",
+      "joinCommunity": "Bergabung dengan komunitas",
+      "emailPlaceholder": "Masukkan email Anda",
+      "subscribe": "Berlangganan",
+      "disclaimer": "Dengan berlangganan, Anda setuju untuk menerima pembaruan dan komunikasi pemasaran dari saya."
+    }
+  },
+  "about": {
+    "label": "Tentang",
+    "title": "Awal Ketertarikan Saya pada Dunia Kode",
+    "section1": {
+      "title": "Perjalanan pemrograman saya",
+      "description": "Semua berawal dari rasa penasaran bagaimana sebuah website bisa terlihat begitu interaktif dan menarik. Saat kuliah di Universitas Teknokrat Indonesia saya belajar dasar pemrograman, tetapi lewat proyek pribadi dan freelance kecil saya benar-benar memahami esensi membangun website. Saya banyak mengeksplorasi HTML, CSS, dan JavaScript sebelum jatuh cinta pada React.js dan Next.js, terutama App Router yang memberi kontrol penuh untuk merancang UI/UX yang elegan dan efisien."
+    },
+    "section2": {
+      "title": "Menemukan passion di frontend",
+      "description": "Frontend bagi saya adalah ruang kreatif tempat logika dan desain saling melengkapi. Saya senang membangun antarmuka yang bersih, konsisten, dan responsif untuk mobile maupun desktop. Tools favorit saya meliputi React.js, Next.js (App Router), Tailwind CSS, React Query, Axios, Firebase, Supabase, TypeScript, dan Vercel untuk deployment super cepat."
+    },
+    "section3": {
+      "title": "Belajar lewat proyek nyata",
+      "description": "Selama kuliah hingga sekarang saya mengerjakan banyak produk: portofolio pribadi, landing page, website brand lokal, sistem login/register khusus, dashboard admin ringan, hingga blog pribadi dengan Markdown dan rute dinamis. Saya percaya cara belajar terbaik adalah membuat sesuatu yang nyata."
+    },
+    "section4": {
+      "title": "Di luar kode",
+      "description": "Saya suka mencoba desain UI/UX, menulis blog teknis, dan kadang membantu teman yang butuh 'joki tugas'. Saat tidak ngoding, saya biasanya bersantai sambil mendengarkan musik atau mengeksplorasi tren teknologi terbaru."
+    },
+    "introduce": {
+      "title": "Saya Ahmad Januar, seorang Frontend Developer kreatif."
+    },
+    "experience": {
+      "label": "Pengalaman",
+      "title": "Kronologi perjalanan karier saya",
+      "items": {
+        "silentCicada": {
+          "company": "PT Silent Cicada Tech",
+          "period": "Juli 2025 - Oktober 2025",
+          "role": "Digital Marketing",
+          "description": [
+            "Membangun website perusahaan yang ramah SEO dengan Next.js dan membuat materi promosi yang selaras dengan identitas brand menggunakan Figma/Canva.",
+            "Menjalankan kampanye digital marketing, mengelola SEO dan Google Business Profile, serta memelihara media sosial bersama tim sales."
+          ]
+        },
+        "sema": {
+          "company": "PT Sema Information Technology Services",
+          "period": "Jan 2023 - Nov 2024",
+          "role": "Proyek Freelance",
+          "description": [
+            "Penerjemahan Bahasa: Bekerja sama dengan tim penerjemah profesional untuk menghadirkan konten multibahasa berkualitas tinggi.",
+            "Quality Control TTS: Memimpin 160 labeler dan 20 auditor dengan tingkat akurasi di atas 95% dalam proyek speech synthesis."
+          ]
+        },
+        "dishub": {
+          "company": "Dinas Perhubungan Kota Bandar Lampung",
+          "period": "Nov 2022 - Jan 2023",
+          "role": "Magang Mahasiswa",
+          "description": [
+            "Menyusun laporan absensi harian dan bulanan serta mengolah data tenaga honorer menggunakan Microsoft Excel.",
+            "Memperbarui sistem operasi komputer kantor, memverifikasi data pendaftaran ASN secara daring, dan menyiapkan pakta integritas sesuai format resmi."
+          ]
+        }
+      }
+    },
+    "skills": {
+      "label": "Kemampuan",
+      "title": "Kemampuan saya dan akan terus berkembang"
+    },
+    "more": {
+      "label": "Lainnya",
+      "title": "Bagian dari keseharian saya.",
+      "favoriteSong": {
+        "title": "Daftar lagu favorit",
+        "descriptionBefore": "Akhir-akhir ini saya suka mendengarkan lagu",
+        "highlight": "Novo Amor",
+        "descriptionAfter": "untuk menemani momen produktif.",
+        "imageAlt": "Sampul Novo Amor"
+      },
+      "photography": {
+        "title": "Menangkap Momen Sunyi",
+        "description": "Baik cahaya pagi di kamar maupun perjalanan pulang saat hujan, saya senang mengabadikan momen lewat lensa.",
+        "altMorning": "cahaya pagi",
+        "altRainy": "hujan sore",
+        "altQuiet": "momen sunyi"
+      },
+      "books": {
+        "title": "Satu Halaman Sehari, Pikiran Tetap Damai",
+        "countLabel": "5 Buku",
+        "loading": "Memuat daftar buku...",
+        "altSangAlkemis": "Sampul Sang Alkemis",
+        "altFinancial": "Sampul The Intelligent Investor",
+        "altSilent": "Sampul The Silent Patient",
+        "altPsychology": "Sampul The Psychology of Money",
+        "altFilosofi": "Sampul Filosofi Teras"
+      },
+      "reading": {
+        "title": "Baca Satu Dokumen Sehari",
+        "subtitle": "Langkah sederhana untuk terus belajar",
+        "items": {
+          "designSystems": {
+            "title": "Design Systems",
+            "status": "Sedang dibaca"
+          },
+          "webArchitecture": {
+            "title": "Arsitektur Web",
+            "status": "Antrian berikutnya"
+          },
+          "apiDesign": {
+            "title": "Perancangan API",
+            "status": "Segera dimulai"
+          }
+        },
+        "progress": {
+          "label": "Progres Mingguan",
+          "value": "3/5 dokumen"
+        }
+      },
+      "dailyRoutine": {
+        "title": "Rutinitas Harian",
+        "items": {
+          "wake": "Bangun pukul 05.30",
+          "code": "Ngoding & belajar sampai pukul 16.00",
+          "exercise": "Olahraga pukul 17.00"
+        }
+      }
+    }
+  },
+  "project": {
+  "label": "Proyek",
+  "title": "Kumpulan karya favorit saya.",
+  "project1": {
+    "name": "Dapur Tradisional",
+    "description": "Sebuah website untuk restoran tradisional Indonesia yang menawarkan berbagai macam hidangan khas Nusantara. Website ini dibangun menggunakan React.js untuk frontend, Tailwind CSS untuk styling, Express.js untuk backend, dan PostgreSQL sebagai database."
+  },
+  "project2": {
+    "name": "Bentodesu",
+    "description": "Landing page untuk layanan food delivery yang menawarkan berbagai hidangan tradisional Indonesia. Website ini dibangun menggunakan React.js untuk bagian frontend."
+  },
+  "project3": {
+    "name": "Magic Image",
+    "description": "Magic Image adalah website untuk mengonversi gambar ke format WebP dan mengunduhnya. Website ini dibangun menggunakan Next.js untuk frontend dan terintegrasi dengan OpenAI API untuk fitur image generation."
+  },
+  "project4": {
+    "name": "Sistem Pakar Diagnosa Penyakit",
+    "description": "Sebuah sistem untuk mendiagnosis dan mengatasi penyakit menggunakan knowledge base informasi medis. Dibangun dengan PHP, MySQL, dan Bootstrap untuk frontend maupun backend."
+  }
+  },
+  "toolbox" : {
+    "title" : "Perangkat keras dan perangkat lunak yang saya simpan di kotak peralatan saya."
+  }
+}
+

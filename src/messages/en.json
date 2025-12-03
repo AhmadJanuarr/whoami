@@ -1,0 +1,224 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "blogs": "Blogs",
+    "projects": "Projects",
+    "toolbox": "Toolbox",
+    "welcome": "Welcome",
+    "fullstackDeveloper": "Fullstack Developer"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "blogs": "Blogs",
+    "projects": "Projects",
+    "toolbox": "Toolbox"
+  },
+  "footer": {
+    "link": {
+      "home": "home",
+      "about": "about",
+      "blogs": "blogs",
+      "projects": "projects",
+      "toolbox": "toolbox",
+      "next": "next.js",
+      "tailwind": "tailwind css",
+      "api": "api routes",
+      "community": "community",
+      "paypal": "paypal",
+      "github": "github",
+      "linkedin": "linkedin"
+    },
+    "description" :"Hi, I am a Front End Developer who loves building beautiful, responsive, and functional websites.",
+    "navigate": "navigate",
+    "build": "build",
+    "misc": "misc"
+  },
+  "home": {
+    "hero": {
+      "title1": "Hey, I'm Ahmad Januar!",
+      "title2": "Welcome to my corner",
+      "title3": "of the internet!",
+      "description": "Welcome to my digital experimentation place! I am a front-end developer who loves to design and tinker. This website is my playroom to try out new ideas and share interesting things!"
+    },
+    "about": {
+      "head": "These are the things that set me apart from the rest",
+      "card1": {
+        "title": "Get to know me better",
+        "description": "I'm Ahmad, a front-end developer who loves to share and experiment."
+      },
+      "card2": {
+        "title": "What Drives Me",
+        "description": "Clean code, attention to detail, and constant learning. I believe great products are built at the intersection of design and engineering — and I love being at that crossroad."
+      },
+      "card3": {
+        "title": "Crafting the Web",
+        "description": "I build fast, responsive, and scalable web applications."
+      },
+      "card4": {
+        "title": "Thoughts & Experiments",
+        "description": "Welcome to my blog — where I share my journey, front-end tips, explain complex concepts simply, and record the things I learn."
+      }
+    },
+    "blogs": {
+      "label": "Latest Articles",
+      "title": "I like to share experiences and experiments in writing."
+    },
+    "projects": {
+      "label": "Our Work",
+      "title": "Featured projects development studio",
+      "viewProject": "View Project"
+    },
+    "newsletter": {
+      "title": "Stay Updated with My Journey",
+      "description": "Subscribe to my newsletter for the latest updates, insights, and exclusive content.",
+      "joinCommunity": "Join the community",
+      "emailPlaceholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "disclaimer": "By subscribing, you agree to receive updates and marketing communications from me."
+    }
+  },
+  "about": {
+    "label": "About",
+    "title": "The Beginning of My Interest in the World of Code",
+    "section1": {
+      "title": "My programming journey",
+      "description": "It all started with a curiosity about how a website could look so interactive and engaging. While studying at Universitas Teknokrat Indonesia I learned the basics of programming, but personal projects and small freelance work taught me what it truly means to build a website. I spent countless hours exploring HTML, CSS, and JavaScript before falling in love with React.js and Next.js, especially the App Router that gives complete control to craft elegant and efficient UI/UX."
+    },
+    "section2": {
+      "title": "Finding passion in frontend",
+      "description": "Frontend is my creative playground where logic meets design. I enjoy crafting clean, consistent, and responsive interfaces for both mobile and desktop. My favorite tools and technologies include React.js, Next.js (App Router), Tailwind CSS, React Query, Axios, Firebase, Supabase, TypeScript, and Vercel for lightning-fast deployments."
+    },
+    "section3": {
+      "title": "Learning through real projects",
+      "description": "During and after college I built many products: personal portfolios, landing pages, websites for local brands, custom authentication systems, lightweight admin dashboards, and personal blogs powered by Markdown and dynamic routes. I believe the fastest way to grow is by building something real."
+    },
+    "section4": {
+      "title": "Beyond the code",
+      "description": "I like experimenting with UI/UX design, writing technical blogs, and occasionally helping friends who need an extra pair of hands. When I'm not coding, you'll find me unwinding with music or exploring the latest tech trends."
+    },
+    "introduce": {
+      "title": "I'm Ahmad Januar, a creative Frontend Developer."
+    },
+    "experience": {
+      "label": "Experience",
+      "title": "Chronology of my work history",
+      "items": {
+        "silentCicada": {
+          "company": "PT Silent Cicada Tech",
+          "period": "July 2025 - October 2025",
+          "role": "Digital Marketing",
+          "description": [
+            "Developed an SEO-optimized company website with Next.js and created brand-aligned promotional materials using Figma/Canva.",
+            "Executed digital marketing campaigns, managed SEO and Google Business Profile, and maintained social media presence in collaboration with the sales team."
+          ]
+        },
+        "sema": {
+          "company": "PT Sema Information Technology Services",
+          "period": "Jan 2023 - Nov 2024",
+          "role": "Freelance Projects",
+          "description": [
+            "Language Translation: Collaborating with professional translation teams to deliver high-quality multilingual content.",
+            "TTS (Text-to-Speech) Quality Control: Leading a team of 160 labeling staff and 20 auditors, maintaining 95%+ accuracy rates in speech synthesis projects."
+          ]
+        },
+        "dishub": {
+          "company": "Dinas Perhubungan Kota Bandar Lampung",
+          "period": "Nov 2022 - Jan 2023",
+          "role": "Student Intern",
+          "description": [
+            "Prepared daily and monthly attendance reports and processed non-civil-servant staff data using Microsoft Excel.",
+            "Updated office computer operating systems, verified ASN registration data online, and drafted integrity pacts following the required format."
+          ]
+        }
+      }
+    },
+    "skills": {
+      "label": "Abilities",
+      "title": "My abilities and will develop further"
+    },
+    "more": {
+      "label": "More",
+      "title": "It's part of my daily life.",
+      "favoriteSong": {
+        "title": "Favorite song list",
+        "descriptionBefore": "Currently I am liking the song",
+        "highlight": "Novo Amor",
+        "descriptionAfter": "to accompany me during my productivity.",
+        "imageAlt": "Novo Amor artwork"
+      },
+      "photography": {
+        "title": "Capture the Quiet Moments",
+        "description": "Whether it's morning light in my room or walking home in the rain, I love capturing moments through my lens.",
+        "altMorning": "morning light",
+        "altRainy": "rainy day",
+        "altQuiet": "quiet moment"
+      },
+      "books": {
+        "title": "A Page a Day Keeps the Noise Away",
+        "countLabel": "5 Books",
+        "loading": "Loading books...",
+        "altSangAlkemis": "Sang Alkemis cover",
+        "altFinancial": "The Intelligent Investor cover",
+        "altSilent": "The Silent Patient cover",
+        "altPsychology": "The Psychology of Money cover",
+        "altFilosofi": "Filosofi Teras cover"
+      },
+      "reading": {
+        "title": "Read One Doc a Day",
+        "subtitle": "Simple steps toward continuous learning",
+        "items": {
+          "designSystems": {
+            "title": "Design Systems",
+            "status": "Currently reading"
+          },
+          "webArchitecture": {
+            "title": "Web Architecture",
+            "status": "Up next"
+          },
+          "apiDesign": {
+            "title": "API Design",
+            "status": "Coming soon"
+          }
+        },
+        "progress": {
+          "label": "Weekly Progress",
+          "value": "3/5 docs"
+        }
+      },
+      "dailyRoutine": {
+        "title": "Daily Routine",
+        "items": {
+          "wake": "Wake up at 5:30 AM",
+          "code": "Code & Learn until 4 PM",
+          "exercise": "Exercise at 5 PM"
+        }
+      }
+    }
+  },
+  "project" :{
+    "label": "Projects",
+    "title":"A collection of my favorite works.",
+    "project1":{
+      "name" :"Dapur Tradisional",
+      "description" : "A website for a traditional Indonesian restaurant that offers a wide range of traditional Indonesian dishes. The website is built with Reactjs for the frontend, Tailwind CSS for the styling expressjs for the backend, and PostgreSQL for the database."
+    },
+    "project2":{
+      "name" :"Bentodesu",
+      "description" : "A landing page for a food delivery service that offers a wide range of traditional Indonesian dishes. The website is built with Reactjs for the frontend"
+    },
+    "project3":{
+      "name" : "Magic Image",
+      "description": "Magic image is a website convert image to webp format and download it. The website is built with Next.js for the frontend and integrated with the OpenAI API for the image generation."
+    },
+    "project4":{
+      "name" : "Sistem Pakar Diagnosa Penyakit",
+      "description" : "A system for diagnosing and treating diseases using a knowledge base of medical information. Built with PHP, MySQL, and Bootstrap for the frontend, and PHP, MySQL, and Bootstrap for the backend."
+    }
+  },
+  "toolbox" : {
+    "title" : "Hardware && software I keep in my toolbox."
+  }
+}
+
