@@ -96,11 +96,11 @@ class Pixel {
   }
 }
 
-function getEffectiveSpeed(value: any, reducedMotion: any) {
+function getEffectiveSpeed(value: string | number, reducedMotion: boolean) {
   const min = 0
   const max = 100
   const throttle = 0.001
-  const parsed = parseInt(value, 10)
+  const parsed = parseInt(String(value), 10)
 
   if (parsed <= min || reducedMotion) {
     return min
@@ -163,11 +163,19 @@ interface VariantConfig {
   noFocus: boolean
 }
 
-export default function PixelCard({ variant = "default", gap, speed, colors, noFocus, className = "", children }: PixelCardProps): JSX.Element {
+export default function PixelCard({
+  variant = "default",
+  gap,
+  speed,
+  colors,
+  noFocus,
+  className = "",
+  children,
+}: PixelCardProps): React.ReactElement {
   const containerRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const pixelsRef = useRef<Pixel[]>([])
-  const animationRef = useRef<any>(null)
+  const animationRef = useRef<number | null>(null)
   const timePreviousRef = useRef(performance.now())
   const reducedMotion = useRef(window.matchMedia("(prefers-reduced-motion: reduce)").matches).current
 
@@ -224,19 +232,19 @@ export default function PixelCard({ variant = "default", gap, speed, colors, noF
     let allIdle = true
     for (let i = 0; i < pixelsRef.current.length; i++) {
       const pixel = pixelsRef.current[i]
-      // @ts-ignore
+      // @ts-expect-error: Dynamic method call on pixel object
       pixel[fnName]()
       if (!pixel.isIdle) {
         allIdle = false
       }
     }
-    if (allIdle) {
+    if (allIdle && animationRef.current) {
       cancelAnimationFrame(animationRef.current)
     }
   }
 
   const handleAnimation = (name: keyof Pixel) => {
-    cancelAnimationFrame(animationRef.current)
+    if (animationRef.current) cancelAnimationFrame(animationRef.current)
     animationRef.current = requestAnimationFrame(() => doAnimate(name))
   }
 
@@ -261,7 +269,7 @@ export default function PixelCard({ variant = "default", gap, speed, colors, noF
     }
     return () => {
       observer.disconnect()
-      cancelAnimationFrame(animationRef.current)
+      if (animationRef.current) cancelAnimationFrame(animationRef.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finalGap, finalSpeed, finalColors, finalNoFocus])
