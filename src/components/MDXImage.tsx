@@ -1,7 +1,11 @@
 import Image from "next/image"
 import React from "react"
 
-export default function MDXImage({ src, alt, ...props }: React.ImgHTMLAttributes<HTMLImageElement>) {
+export default function MDXImage({
+  src,
+  alt,
+  ...props
+}: { src: string; alt?: string } & Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src" | "alt">) {
   if (!src) return null
 
   return (
