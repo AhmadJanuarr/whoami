@@ -1,0 +1,41 @@
+"use client"
+import { ProjectProps } from "@/datas/project-list"
+import { motion } from "framer-motion"
+import { PiArrowArcRight } from "react-icons/pi"
+import FollowerPointerCard from "@/components/ui/FollowerPointerCard"
+import Link from "next/link"
+
+export const ProjectCard = ({ image, title, description, href }: ProjectProps) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+      viewport={{ once: true, amount: 0.5 }}
+      className="relative mb-10 rounded-3xl"
+    >
+      <FollowerPointerCard title="View Project">
+        <Link href={href} target="_blank" rel="noopener noreferrer">
+          <div className="relative flex h-[250px] items-center justify-center overflow-hidden rounded-xl border border-borderPrimary bg-[#FCFCFC] p-4 dark:bg-bgDarkSecondary md:h-[500px] md:p-8 lg:h-[700px] lg:p-16">
+            <img src={image} alt={title} className="h-auto w-full rounded-xl border border-borderPrimary object-cover object-center" />
+          </div>
+        </Link>
+      </FollowerPointerCard>
+      <div className="mt-4 flex flex-col gap-3 md:mt-6 md:gap-4 lg:mt-8 lg:gap-6">
+        <div className="max-w-2xl space-y-2 md:space-y-3">
+          <h2 className="text-xl font-bold tracking-tight text-textPrimary dark:text-textDarkPrimary md:text-2xl lg:text-3xl">{title}</h2>
+          <p className="lg:sizeSubtitle text-sm leading-relaxed text-gray-400/90 dark:text-textDarkSecondary md:text-base">{description}</p>
+        </div>
+        <Link
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/link inline-flex w-fit items-center gap-1 text-xs font-medium text-accentColor transition-all hover:text-accentColor/90 md:gap-2 md:text-sm"
+        >
+          <span className="border-b border-transparent transition-colors group-hover/link:border-accentColor/90">View Project</span>
+          <PiArrowArcRight className="h-3 w-3 transition-transform group-hover/link:translate-x-1 md:h-4 md:w-4" />
+        </Link>
+      </div>
+    </motion.div>
+  )
+}

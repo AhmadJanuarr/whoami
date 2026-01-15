@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,15 +16,9 @@
     "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/app/*"
-      ],
-      "next-globe-gen/schema": [
-        "./next-globe-gen/schema.ts"
-      ],
-      "next-globe-gen/messages": [
-        "./next-globe-gen/messages.ts"
-      ]
+      "@/*": ["./src/*"],
+      "next-globe-gen/schema": ["./next-globe-gen/schema.ts"],
+      "next-globe-gen/messages": ["./next-globe-gen/messages.ts"]
     },
     "plugins": [
       {
@@ -42,13 +32,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/**/*.ts",
-    "src/app/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     "src/_app/**/*.ts",
     "src/_app/**/*.tsx",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

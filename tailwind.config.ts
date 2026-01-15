@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss"
 
 const config: Config = {
   darkMode: ["class"],
-  content: ["./src/_app/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       perspective: {
@@ -47,9 +47,9 @@ const config: Config = {
         borderPrimary: "#F0F0F0",
         primaryColor: "#3C9EE7",
         accentColor: "#4F46E5",
-        bgDarkPrimary: "#212529",
-        bgDarkSecondary: "#343A41",
-        textDarkPrimary: "#F5F5F5",
+        bgDarkPrimary: "#0c0a09",
+        bgDarkSecondary: "#1c1917",
+        textDarkPrimary: "#f5f5f4",
         textDarkSecondary: "#D1D5DB",
       },
       fontFamily: {

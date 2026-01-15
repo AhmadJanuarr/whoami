@@ -19,13 +19,13 @@ export const metadata = {
 
 const aspekta = localFont({
   src: [
-    { path: "../app/assets/fonts/Aspekta-200.otf", weight: "200" },
-    { path: "../app/assets/fonts/Aspekta-400.otf", weight: "400" },
-    { path: "../app/assets/fonts/Aspekta-500.otf", weight: "500" },
-    { path: "../app/assets/fonts/Aspekta-600.otf", weight: "600" },
-    { path: "../app/assets/fonts/Aspekta-700.otf", weight: "700" },
-    { path: "../app/assets/fonts/Aspekta-800.otf", weight: "800" },
-    { path: "../app/assets/fonts/Aspekta-900.otf", weight: "900" },
+    { path: "../assets/fonts/Aspekta-200.otf", weight: "200" },
+    { path: "../assets/fonts/Aspekta-400.otf", weight: "400" },
+    { path: "../assets/fonts/Aspekta-500.otf", weight: "500" },
+    { path: "../assets/fonts/Aspekta-600.otf", weight: "600" },
+    { path: "../assets/fonts/Aspekta-700.otf", weight: "700" },
+    { path: "../assets/fonts/Aspekta-800.otf", weight: "800" },
+    { path: "../assets/fonts/Aspekta-900.otf", weight: "900" },
   ],
   variable: "--font-aspekta",
   display: "swap",
