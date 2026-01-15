@@ -16,8 +16,8 @@ function slugify(str: string) {
 }
 
 // === Component Factories ===
-const createHeading = (tag: keyof JSX.IntrinsicElements, className: string) => {
-  return ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => {
+const createHeading = (tag: keyof React.JSX.IntrinsicElements, className: string) => {
+  const Component = ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => {
     const slug = slugify(children?.toString() || "")
     return React.createElement(
       tag,
@@ -32,26 +32,32 @@ const createHeading = (tag: keyof JSX.IntrinsicElements, className: string) => {
       </>,
     )
   }
+  Component.displayName = `Heading${tag.toUpperCase()}`
+  return Component
 }
 
 const createList = (Tag: "ul" | "ol", className: string) => {
-  return ({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
+  const Component = ({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
     <Tag className={className} {...props}>
       {children}
     </Tag>
   )
+  Component.displayName = `List${Tag.toUpperCase()}`
+  return Component
 }
 
 const createListItem = () => {
-  return ({ children, ...props }: React.LiHTMLAttributes<HTMLLIElement>) => (
+  const Component = ({ children, ...props }: React.LiHTMLAttributes<HTMLLIElement>) => (
     <li className="sizeSubtitle mb-4 text-textSecondary dark:text-textDarkSecondary" {...props}>
       {children}
     </li>
   )
+  Component.displayName = "ListItem"
+  return Component
 }
 
 const createParagraph = () => {
-  return ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => {
+  const Component = ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => {
     const hasBlock = React.Children.toArray(children).some(
       (child) =>
         React.isValidElement(child) &&
@@ -67,34 +73,42 @@ const createParagraph = () => {
       </p>
     )
   }
+  Component.displayName = "Paragraph"
+  return Component
 }
 
 const createAnchor = () => {
-  return ({ children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  const Component = ({ children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a className="text-accentColor hover:underline" href={`#${slugify(children?.toString() || "")}`} {...props}>
       {children}
     </a>
   )
+  Component.displayName = "Anchor"
+  return Component
 }
 
 const createBlockquote = () => {
-  return ({ children, ...props }: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
+  const Component = ({ children, ...props }: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
     <blockquote className="sizeSubtitle my-4 border-l-4 border-accentColor pl-4 italic text-textSecondary" {...props}>
       {children}
     </blockquote>
   )
+  Component.displayName = "Blockquote"
+  return Component
 }
 
 const createCode = () => {
-  return ({ children, ...props }: React.HTMLAttributes<HTMLElement>) => (
+  const Component = ({ children, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code className="relative rounded bg-gray-100 px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-accentColor" {...props}>
       {children}
     </code>
   )
+  Component.displayName = "InlineCode"
+  return Component
 }
 
 const createPre = () => {
-  return ({ children, className, ...props }: React.HTMLAttributes<HTMLPreElement>) => {
+  const Component = ({ children, className, ...props }: React.HTMLAttributes<HTMLPreElement>) => {
     const lang = className?.replace("language-", "") || "text"
     return (
       <pre className="relative mb-4 mt-4 overflow-x-auto rounded-lg bg-gray-900 p-4" {...props}>
@@ -104,6 +118,8 @@ const createPre = () => {
       </pre>
     )
   }
+  Component.displayName = "Pre"
+  return Component
 }
 
 // === Exported MDX Components ===
